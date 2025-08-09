@@ -1,1 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Owner Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Owner Portal</h1>
+    <div id="login-section">
+      <label>Who are you?</label>
+      <select id="role">
+        <option>Owner</option>
+        <option>Tester</option>
+        <option>Client</option>
+        <option>Nobody</option>
+      </select>
+      <div id="credentials">
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+      </div>
+      <button id="login-btn">Login</button>
+      <p id="login-message"></p>
+    </div>
+
+    <div id="portal" style="display:none;">
+      <div id="owner-panel" style="display:none;">
+        <h2>Owner Controls</h2>
+        <input type="file" id="fileInput">
+        <button id="upload-btn">Upload</button>
+      </div>
+
+      <h2>Files</h2>
+      <ul id="file-list"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
 
